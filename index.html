@@ -2,235 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>RITESH KADAM | AI & Data Science Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritesh Kadam</title>
-    <link rel="stylesheet"  href="style.css">
-
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-
-
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body id="body" >
-    <div class="cursor"> </div>
-    <div id="navBar">
-        <a class="navItems" href="#" id="home">Home</a>
-        <a class="navItems" href="#" id="aboutMe">About Me</a>
-        <a class="navItems" href="#" id="projects">Projects</a>
-        <a class="navItems" href="https://drive.google.com/file/d/1oLOkJT7whvoxLT6q74JYAguqh5vzWnTs/view?usp=drive_link" id="resume">Resume</a>
+<body id="body">
+    <!-- Glass-morphic Navigation Bar -->
+    <nav id="navBar" class="glass-nav">
+        <a href="#about" class="navItems">About</a>
+        <a href="#experience" class="navItems">Experience</a>
+        <a href="#projects" class="navItems">Projects</a>
+        <a href="#contact" class="navItems">Contact</a>
+    </nav>
 
-    </div><hr>
-<div id="flexContainer">
-    <!-- Row for Lottie and Avatar -->
-    <div class="row">
-        <!-- Lottie Animation -->
-        <div id="lottie1">
-            <dotlottie-player
-            src="https://lottie.host/b27e87cf-7005-4b19-a527-be2421482bbe/tZ9DUukLky.lottie"
-            background="transparent"
-            speed="0.5"
-            style="width: 220; height: 220"
-            loop
-            autoplay
-></dotlottie-player>
-        </div>
-                  <!-- Avatar Section -->
-        <div class="box">
-            <div class="content">
-                <img src="/resources/aboutMe.png" alt="Profile Picture" id="profile">
+    <!-- Hero Section -->
+    <section class="heroSection">
+        <div class="scroll-fade">
+            <span class="greet">Hello! I'm</span>
+            <h1 id="title" class="gradient-text">RITESH KADAM</h1>
+            <span class="auto-type"></span>
+            <div class="icons">
+                <a id="linkedin" href="#" target="_blank"></a>
+                <a id="github" href="#" target="_blank"></a>
+                <a id="mail" href="mailto:email@example.com"></a>
             </div>
         </div>
-        <div id="lottie2">
-          
-        <dotlottie-player src="https://lottie.host/e3762ebd-eb05-475d-823d-a9467c98d771/OTItd8MqIW.lottie" 
-            background="transparent" 
-            speed="2" 
-            style="width: 220px; height: 220px; top: 0px;left: 0px;" 
-            loop 
-            autoplay>
-</dotlottie-player>
-        </div>
-    </div>
+    </section>
 
-    <!-- Vertical Span Section -->
-    <div class="heroSection">
-        <div class="tagline" style="font-size: 45px;"><span class="auto-type"></span></div>
-    </div>
-</div>
-<br>
-    </div>
+    <hr id="partition">
 
-<h2 class="partitions" id="partitionsTitle">About Me</h2>
-<hr id="partition">
-<div class="aboutMe" id="aboutMeDescription"> 
-    <div class="aboutMe-container">
-        <!-- Avatar Section -->
+    <!-- About Section -->
+    <section id="about" class="aboutMe-container scroll-slide-up">
         <div class="avatarOuter">
             <div class="boxAbout">
                 <div class="contentAbout">
-                <img src="/resources/me.jpg" alt="Profile Picture" id="profile">
-            </div>
-            </div>            <div class="avatar-icons">
-                <a id="linkedin" href="https://www.linkedin.com/in/ritesh-kadam-610780250"></a>  
-                <a id="github" href="https://github.com/RiteshBKadam"></a>  
-                <a id="mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=riteshbkadam@gmail.com"></a>  
+                    <!-- Place your photo here if needed -->
+                </div>
             </div>
         </div>
-        
-        
-        <!-- Text Section -->
         <div class="aboutMe-text">
-            <p>Hello! I'm</p>
-            <div id="nameFlex">
-            <p id="aboutMeName">RITESH KADAM</p>
-            <div id="lottie3"><dotlottie-player
-                src="https://lottie.host/48f14dbd-0435-483d-a8b7-6cb9ba421cb2/u9WNDlT1XV.lottie"
-                background="transparent"
-                speed="1"
-                style="width: 65px; height: 65px"
-                loop
-                autoplay
-              ></dotlottie-player>
-            </div>
-        </div>
+            <h2>About Me</h2>
             <p>
-                An Artificial Intelligence and Data Science student passionate about leveraging technology to solve real-world challenges. My expertise lies in Android development with Kotlin and Java, as well as exploring web development technologies.
-            </p>
-        <br>
-            <p>
+                An Artificial Intelligence and Data Science student passionate about leveraging technology to solve real-world challenges. My expertise lies in Android development with Kotlin and Java, as well as exploring web development technologies. <br><br>
                 I thrive in building efficient, user-centric applications and platforms, combining software development skills with data-driven decision-making. A continuous learner, I focus on creating meaningful solutions that contribute to innovation and impact.
-            </p> 
+            </p>
         </div>
-    </div>
-</div>
+    </section>
 
-<h2 class="partitions" id="partitionsTitle">My Work</h2>
-<hr id="partition">
-
-<div id="projectHeading">PROJECTS</div>
-
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="/resources/wishlist1 (4).jpeg" class="card-img-top" alt="net.png">
-        <div class="projectInfo">
-            <p  id="projectDate">JUN 2023</p>
-            <div  id="projectTitle">WISHLIST APP</div>
-            <div class="projectDescription">WRITE DOWN WHAT YOU WISH</div>
-            <span class="techStack">{JETPACK COMPOSE, ROOM DB, MVVM}
-            </span>
-            <a href="https://github.com/RiteshBKadam/WishListApp"  id="viewGithub">View GitHub</a>
-        </div>
-   
-    </div>
-      </div>
-
-    <div class="col">
-      <div class="card h-100">
-        <img src="/resources/bggg.png" class="card-img-top" alt="">
-        <div class="projectInfo">
-            <p  id="projectDate">MAR 2025</p>
-            <div  id="projectTitle">BEATSFIT</div>
-            <div class="projectDescription">TAKES YOURS AND FAMILY'S CARE</div>
-            <span class="techStack">{JETPACK COMPOSE, ROOM DB, FIRESTORE}
-            </span>
-            <a href="https://github.com/RiteshBKadam/BeatsFit"  id="viewGithub">View GitHub</a>
-        </div>
-   
-    </div>
-      </div>
-
-    <div class="col">
-      <div class="card h-100">
-        <img src="/resources/ebuddy.jpeg" style="opacity: 0.9;" class="card-img-top" alt="net.png">
-        <div class="projectInfo">
-            <p  id="projectDate">MARCH 2024</p>
-            <div  id="projectTitle">eBUDDY</div>
-            <div class="projectDescription">
-                MANAGES ALL YOUR EXPENSES <br>
-              </div>
-              <span class="techStack">{JAVA, XML, FIREBASE}
-            </span>
-            <a href="https://github.com/RiteshBKadam/eBuddy"  id="viewGithub">View GitHub</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col">
-      <div class="card h-100">
-        <img src="/resources/quickly.webp" class="card-img-top" alt="net.png">
-        <div class="projectInfo">
-            <p  id="projectDate">JUL 2023</p>
-            <div  id="projectTitle">QUICKLY</div>
-            <div class="projectDescription">SHARE '.APK' OF ANY APP</div>
-            <span class="techStack">{KOTLIN, PACKAGE MANAGER, INTENTS}</span>
-            <a href="https://github.com/RiteshBKadam/Quickly"  id="viewGithub">View GitHub</a>
-        </div>
-    </div>
-      </div>
-    </div>
-
-    <div id="projectHeading">EXTRA-CURRICULAR</div>
-
-
-        <div class="extraCurricular-container0">
-                    <div id="logo">
-                        <div id="lottie1">
-                            <dotlottie-player
-                            src="https://lottie.host/d7834139-5872-418a-b8f9-a722bd000a58/lPbjDbkCqI.lottie"
-                            background="transparent"
-                            speed="1"
-                            style="width: 230px; height: 230px"
-                            loop
-                            autoplay
-                          ></dotlottie-player>
-                        </div>               
-                     </div>
-            <div class="extraCurricular-text">
-                <div id="extraCurricularNameFlex">
-                <p id="extraCurricularName">Android Development Head <span> - (CSI-DYPIEMR)</span></p>
-            
-            </div>
-            <p>Led the development process from concept to completion, ensuring highquality outcomes.
-                Enhanced team’s technical skills and fostered a culture of continuous learning.
-                Developed leadership and teamwork skills in a collaborative environment.
+    <!-- Experience Section -->
+    <section id="experience" class="scroll-fade">
+        <h2 class="partitionsTitle">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Android Development Head <span>- (CSI-DYPIEMR)</span></h3>
+                <p>
+                    Led the development process from concept to completion, ensuring high-quality outcomes. Enhanced team’s technical skills and fostered a culture of continuous learning. Developed leadership and teamwork skills in a collaborative environment.
                 </p>
-               
             </div>
-            
-         </div>      
-         
-        <div class="extraCurricular-container1">
-            <div id="logo">
-                <div id="lottie1">
-                    <dotlottie-player
-  src="https://lottie.host/a51c66d8-8892-43e9-a2eb-d4f485d11407/8nAgd7vZeo.lottie"
-  background="transparent"
-  speed="1"
-  style="width: 270px; height: 270px"
-  loop
-  autoplay
-></dotlottie-player>
-                </div>               
-             </div>
-    <div class="extraCurricular-text">
-        <div id="extraCurricularNameFlex">
-        <p id="extraCurricularName">Ex-Joint Technical Head<span> - (ACM-DYPIEMR)</span></p>
-    
-    </div>
-    <p>Organized and led technical events, promoting collaboration among members.
-        Conducted workshops and seminars to boost skill development.
-        Enhanced the technical knowledge and capabilities of the students
-    </p>
-       
-    </div>
-    
- </div>      
+            <div class="timeline-item">
+                <h3>Ex-Joint Technical Head <span>- (ACM-DYPIEMR)</span></h3>
+                <p>
+                    Organized and led technical events, promoting collaboration among members. Conducted workshops and seminars to boost skill development. Enhanced the technical knowledge and capabilities of the students.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="scroll-slide-up">
+        <h2 id="projectHeading">Projects</h2>
+        <div class="bento-grid">
+            <!-- Example: Add your projects here as new cards -->
+            <div class="project-card">
+                <img class="card-img-top" src="resources/project1.png" alt="Project 1">
+                <div class="projectInfo">
+                    <span id="projectTitle">Project Title</span>
+                    <span id="projectDate">2024</span>
+                    <p class="projectDescription">Brief description of the project showcasing its purpose, tech stack, or innovative elements.</p>
+                    <div class="techStack">Kotlin, Python, React</div>
+                    <a id="viewGithub" href="#" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Duplicate project-card divs for more projects -->
+        </div>
+    </section>
 
-        
+    <!-- Contact Section -->
+    <section id="contact" class="contactMe-container scroll-fade">
+        <div class="contactMe-title">
+            <h3>Contact Me</h3>
+            <p>Let's create something innovative together!</p>
+        </div>
+        <div class="contactMe-content">
+            <div class="contactLottie"></div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required rows="4"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-icons">
+            <a class="contact-icon linkedin" href="#" target="_blank"></a>
+            <a class="contact-icon github" href="#" target="_blank"></a>
+            <a class="contact-icon email" href="mailto:email@example.com"></a>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="index.js"></script>
+    <div class="cursor"></div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="index.js"></script>
 </body>
 </html>
