@@ -1,116 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>RITESH KADAM | AI & Data Science Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <!-- Glass-morphic Navigation Bar -->
     <nav id="navBar" class="glass-nav">
-        <a href="#about" class="navItems">About</a>
-        <a href="#experience" class="navItems">Experience</a>
-        <a href="#projects" class="navItems">Projects</a>
-        <a href="#contact" class="navItems">Contact</a>
+      <a href="#about" class="navItems">About</a>
+      <a href="#experience" class="navItems">Experience</a>
+      <a href="#projects" class="navItems">Projects</a>
+      <a href="#contact" class="navItems">Contact</a>
     </nav>
 
     <!-- Hero Section -->
     <section class="heroSection">
-        <div class="scroll-fade">
-            <span class="greet">Hello! I'm</span>
-            <h1 id="title" class="gradient-text">RITESH KADAM</h1>
-            <span class="auto-type"></span>
-            <div class="icons">
-                <a id="linkedin" href="#" target="_blank"></a>
-                <a id="github" href="#" target="_blank"></a>
-                <a id="mail" href="mailto:email@example.com"></a>
+      <div class="hr-spacing">
+        <div class="avatarOuter">
+          <div class="boxAbout">
+            <div class="contentAbout">
+              <img src="/resources/me.jpg" alt="Profile Picture" id="profile" />
             </div>
+          </div>
         </div>
+      </div>
+      <div class="scroll-fade">
+        <span class="greet">Hello! I'm</span>
+        <h1 id="title" class="gradient-text">RITESH KADAM</h1>
+        <span class="auto-type"></span>
+        <div class="icons">
+          <a id="linkedin" href="#" target="_blank"></a>
+          <a id="github" href="#" target="_blank"></a>
+          <a id="mail" href="mailto:email@example.com"></a>
+        </div>
+      </div>
     </section>
 
-    <hr id="partition">
+    <hr id="partition" />
 
     <!-- About Section -->
     <section id="about" class="aboutMe-container scroll-slide-up">
-        <div class="avatarOuter">
-            <div class="boxAbout">
-                <div class="contentAbout">
-                    <!-- Place your photo here if needed -->
-                </div>
-            </div>
+      <div class="avatarOuter">
+        <div class="boxAbout">
+          <div class="contentAbout">
+            <img src="/resources/me.jpg" alt="Profile Picture" id="profile" />
+          </div>
         </div>
-        <div class="aboutMe-text">
-            <h2>About Me</h2>
-            <p>
-                An Artificial Intelligence and Data Science student passionate about leveraging technology to solve real-world challenges. My expertise lies in Android development with Kotlin and Java, as well as exploring web development technologies. <br><br>
-                I thrive in building efficient, user-centric applications and platforms, combining software development skills with data-driven decision-making. A continuous learner, I focus on creating meaningful solutions that contribute to innovation and impact.
-            </p>
-        </div>
+      </div>
+      <!-- <div class="">
+        <dotlottie-player
+          src="https://lottie.host/e3762ebd-eb05-475d-823d-a9467c98d771/OTItd8MqIW.lottie"
+          background="transparent"
+          speed="2"
+          style="width: 220px; height: 220px"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div> -->
+      <div class="aboutMe-text">
+        <h2>About Me</h2>
+        <p>
+          An Artificial Intelligence and Data Science student passionate about
+          leveraging technology to solve real-world challenges. My expertise
+          lies in Android development with Kotlin and Java, as well as exploring
+          web development technologies. <br /><br />
+          I thrive in building efficient, user-centric applications and
+          platforms, combining software development skills with data-driven
+          decision-making. A continuous learner, I focus on creating meaningful
+          solutions that contribute to innovation and impact.
+        </p>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="scroll-fade">
-        <h2 class="partitionsTitle">Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Android Development Head <span>- (CSI-DYPIEMR)</span></h3>
-                <p>
-                    Led the development process from concept to completion, ensuring high-quality outcomes. Enhanced team’s technical skills and fostered a culture of continuous learning. Developed leadership and teamwork skills in a collaborative environment.
-                </p>
-            </div>
-            <div class="timeline-item">
-                <h3>Ex-Joint Technical Head <span>- (ACM-DYPIEMR)</span></h3>
-                <p>
-                    Organized and led technical events, promoting collaboration among members. Conducted workshops and seminars to boost skill development. Enhanced the technical knowledge and capabilities of the students.
-                </p>
-            </div>
+      <h2 class="partitionsTitle">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Android Development Head <span>- (CSI-DYPIEMR)</span></h3>
+          <p>
+            Led the development process from concept to completion, ensuring
+            high-quality outcomes. Enhanced team’s technical skills and fostered
+            a culture of continuous learning. Developed leadership and teamwork
+            skills in a collaborative environment.
+          </p>
         </div>
+        <div class="timeline-item">
+          <h3>Ex-Joint Technical Head <span>- (ACM-DYPIEMR)</span></h3>
+          <p>
+            Organized and led technical events, promoting collaboration among
+            members. Conducted workshops and seminars to boost skill
+            development. Enhanced the technical knowledge and capabilities of
+            the students.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="scroll-slide-up">
-        <h2 id="projectHeading">Projects</h2>
-        <div class="bento-grid">
-            <!-- Example: Add your projects here as new cards -->
-            <div class="project-card">
-                <img class="card-img-top" src="resources/project1.png" alt="Project 1">
-                <div class="projectInfo">
-                    <span id="projectTitle">Project Title</span>
-                    <span id="projectDate">2024</span>
-                    <p class="projectDescription">Brief description of the project showcasing its purpose, tech stack, or innovative elements.</p>
-                    <div class="techStack">Kotlin, Python, React</div>
-                    <a id="viewGithub" href="#" target="_blank">View on GitHub</a>
-                </div>
+      <h2 id="projectHeading">Projects</h2>
+      <div class="bento-grid">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <div class="image-placeholder"></div>
             </div>
-            <!-- Duplicate project-card divs for more projects -->
+
+            <div class="card-date">
+              <div class="calendar-icon"></div>
+              <span>July 23, 2025</span>
+            </div>
+
+            <h3 class="card-title">Awesome Project</h3>
+
+            <p class="card-description">
+              This is a short project description that provides an overview of
+              what this card is about.
+            </p>
+
+            <p class="card-tech">React, Tailwind, Next.js</p>
+
+            <a class="github-link" href="https://github.com" target="_blank">
+              <div class="external-icon"></div>
+              View GitHub
+            </a>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <div class="image-placeholder"></div>
+            </div>
+
+            <div class="card-date">
+              <div class="calendar-icon"></div>
+              <span>July 23, 2025</span>
+            </div>
+
+            <h3 class="card-title">Awesome Project</h3>
+
+            <p class="card-description">
+              This is a short project description that provides an overview of
+              what this card is about.
+            </p>
+
+            <p class="card-tech">React, Tailwind, Next.js</p>
+
+            <a class="github-link" href="https://github.com" target="_blank">
+              <div class="external-icon"></div>
+              View GitHub
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <div class="image-placeholder"></div>
+            </div>
+
+            <div class="card-date">
+              <div class="calendar-icon"></div>
+              <span>July 23, 2025</span>
+            </div>
+
+            <h3 class="card-title">Awesome Project</h3>
+
+            <p class="card-description">
+              This is a short project description that provides an overview of
+              what this card is about.
+            </p>
+
+            <p class="card-tech">React, Tailwind, Next.js</p>
+
+            <a class="github-link" href="https://github.com" target="_blank">
+              <div id="github" style="width: 10px; height: 10px"></div>
+              View GitHub
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <div class="image-placeholder"></div>
+            </div>
+
+            <div class="card-date">
+              <div class="calendar-icon"></div>
+              <span>July 23, 2025</span>
+            </div>
+
+            <h3 class="card-title">Awesome Project</h3>
+
+            <p class="card-description">
+              This is a short project description that provides an overview of
+              what this card is about.
+            </p>
+
+            <p class="card-tech">React, Tailwind, Next.js</p>
+
+            <a class="github-link" href="https://github.com" target="_blank">
+              <div class="external-icon"></div>
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Example: Add your projects here as new cards -->
+        <!-- <div class="project-card">
+          <img
+            class="card-img-top"
+            src="resources/project1.png"
+            alt="Project 1"
+          />
+          <div class="projectInfo">
+            <span id="projectTitle">Project Title</span>
+            <span id="projectDate">2024</span>
+            <p class="projectDescription">
+              Brief description of the project showcasing its purpose, tech
+              stack, or innovative elements.
+            </p>
+            <div class="techStack">Kotlin, Python, React</div>
+            <a id="viewGithub" href="#" target="_blank">View on GitHub</a>
+          </div>
+        </div> -->
+        <!-- Duplicate project-card divs for more projects -->
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contactMe-container scroll-fade">
-        <div class="contactMe-title">
-            <h3>Contact Me</h3>
-            <p>Let's create something innovative together!</p>
-        </div>
-        <div class="contactMe-content">
-            <div class="contactLottie"></div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required rows="4"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-        <div class="contact-icons">
-            <a class="contact-icon linkedin" href="#" target="_blank"></a>
-            <a class="contact-icon github" href="#" target="_blank"></a>
-            <a class="contact-icon email" href="mailto:email@example.com"></a>
-        </div>
+      <div class="contactMe-title">
+        <h3>Contact Me</h3>
+        <p>Let's create something innovative together!</p>
+      </div>
+      <div class="contactMe-content">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required rows="4"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="icons center">
+        <a id="linkedin" href="#" target="_blank"></a>
+        <a id="github" href="#" target="_blank"></a>
+        <a id="mail" href="mailto:email@example.com"></a>
+      </div>
     </section>
 
     <div class="cursor"></div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
