@@ -3,14 +3,14 @@
   --color-border: #e5e7eb;
   --color-primary: #3b82f6;
   --color-muted: #f3f4f6;
-  --color-muted-foreground: #fff;
+  --color-muted-foreground: #ffffffce;
   --color-foreground: #eec674;
 }
 
 body {
   font-size: 19px;
-  background: linear-gradient(135deg, #0f191f 70%, #212d35 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #0f161a 70%, #212d35 100%);
+  color: #ffffffce;
   overflow-x: hidden;
   font-family: "Poppins", "Times New Roman", Times, serif;
   margin: 0;
@@ -38,7 +38,7 @@ body {
 .navItems {
   display: inline-block;
   margin: 0 38px;
-  color: #fff;
+  color: #ffffffce;
   font-size: 1.08em;
   letter-spacing: 1px;
   border-radius: 6px;
@@ -54,12 +54,12 @@ body {
 
 /* Hero Section */
 .heroSection {
-  min-height: 60vh;
-  display: flex;
+  min-height: 78vh;
+  display: flex;  
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 110px;
-  margin-bottom: 34px;
+  margin-bottom: 100px;
 }
 
 .gradient-text {
@@ -138,12 +138,12 @@ body {
   justify-content: center;
   gap: 70px;
   max-width: 1200px;
-  margin: 90px auto 60px auto;
+  margin: 150px auto 220px auto;
 }
 
 .hr-spacing {
   padding: 0 10px;
-  margin: 0 15px;
+  margin: 0px;
 }
 
 .avatarOuter {
@@ -214,8 +214,8 @@ body {
 
 .aboutMe-text {
   width: 54%;
-  color: #fff;
-  line-height: 1.7;
+  color: #ffffffce;
+  line-height: 1.3;
   font-size: 1.16em;
   text-align: justify;
   background: rgba(33, 41, 50, 0.22);
@@ -231,6 +231,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 38px;
+  padding: 50px;
   position: relative;
 }
 .timeline-item {
@@ -258,7 +259,7 @@ body {
 }
 
 .timeline-item p {
-  color: #fff;
+  color: #ffffffce;
   opacity: 0.92;
   font-size: 1.04em;
 }
@@ -312,7 +313,7 @@ body {
     rgba(20, 31, 40, 0.98) 60%,
     rgba(20, 31, 40, 0.2) 95%
   );
-  color: #fff;
+  color: #ffffffce;
   opacity: 0;
   transform: translateY(32px);
   pointer-events: none;
@@ -346,7 +347,7 @@ body {
   margin-bottom: 11px;
 }
 #viewGithub {
-  color: #fff;
+  color: #ffffffce;
   text-decoration: underline;
   font-weight: 600;
   margin-top: 8px;
@@ -413,7 +414,7 @@ body {
   border: none;
   font-size: 1.06em;
   background: #243647;
-  color: #fff;
+  color: #ffffffce;
   box-shadow: 0 1px 8px rgba(62, 94, 120, 0.07);
 }
 .contact-form button {
@@ -562,7 +563,9 @@ body::-webkit-scrollbar-thumb {
   padding: 1.5rem;
 }
 
+/* UPDATED: Fixed image overflow issue */
 .card-image {
+  width: 100%;
   height: 8rem;
   background-color: var(--color-muted);
   border-radius: 0.5rem;
@@ -570,6 +573,16 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* Added to prevent overflow */
+}
+
+/* UPDATED: Fixed image sizing and overflow */
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .image-placeholder {
@@ -591,7 +604,7 @@ body::-webkit-scrollbar-thumb {
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
-  background: url('data:image/svg+xml,<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10m4-4v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>')
+  background: url('data:image/svg+xml,<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10m4-4v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012 2h14a2 2 0 012 2z"></path></svg>')
     no-repeat center center;
   background-size: contain;
 }
@@ -636,7 +649,61 @@ body::-webkit-scrollbar-thumb {
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
-  background: url('data:image/svg+xml,<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6m7-1l-6 6m0 0V4m0 4h4"></path></svg>')
+  background: url('data:image/svg+xml,<svg fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6m7-1l-6 6m0 0V4m0 4h4"></path></svg>')
     no-repeat center center;
   background-size: contain;
+}
+
+/* Android Background Container */
+.android-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    opacity: 0.1;
+    z-index: 1;
+    pointer-events: none; /* allows clicking through shapes */
+}
+
+/* Individual Animated Shapes */
+.android-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3ddc84, #4285f4);
+    animation: float 6s ease-in-out infinite;
+}
+
+.android-shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.android-shape:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 60%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.android-shape:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
 }

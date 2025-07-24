@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="body">
+    <div class="android-bg" style="display: flex;;">
+        <div class="android-shape"></div>
+        <div class="android-shape"></div>
+        <div class="android-shape"></div>
+    </div>
     <!-- Glass-morphic Navigation Bar -->
     <nav id="navBar" class="glass-nav">
       <a href="#about" class="navItems">About</a>
@@ -38,17 +43,13 @@
       </div>
     </section>
 
-    <hr id="partition" />
+
+    <hr id="about" />
+
 
     <!-- About Section -->
     <section id="about" class="aboutMe-container scroll-slide-up">
-      <div class="avatarOuter">
-        <div class="boxAbout">
-          <div class="contentAbout">
-            <img src="/resources/me.jpg" alt="Profile Picture" id="profile" />
-          </div>
-        </div>
-      </div>
+      
       <!-- <div class="">
         <dotlottie-player
           src="https://lottie.host/e3762ebd-eb05-475d-823d-a9467c98d771/OTItd8MqIW.lottie"
@@ -72,10 +73,19 @@
           solutions that contribute to innovation and impact.
         </p>
       </div>
+      <div class="avatarOuter">
+        <div class="boxAbout">
+          <div class="contentAbout">
+            <img src="/resources/me.jpg" alt="Profile Picture" id="profile" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="scroll-fade">
+
+        <hr id="experience" />
+
+    <section id="experience" class="scroll-fade" style="  margin: 100px auto 190px auto;">
       <h2 class="partitionsTitle">Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
@@ -99,139 +109,121 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="scroll-slide-up">
-      <h2 id="projectHeading">Projects</h2>
-      <div class="bento-grid">
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <div class="image-placeholder"></div>
-            </div>
+    <hr id="projects" />
 
-            <div class="card-date">
-              <div class="calendar-icon"></div>
-              <span>July 23, 2025</span>
-            </div>
+  <section id="projects" class="scroll-slide-up" style="margin: 100px auto 190px auto;">
+  <h2 id="projectHeading">Projects</h2>
+  <div class="bento-grid">
+ 
+<div class="card">
+  <div class="card-content">
+    <div class="card-image">
+      <img src="/resources/beatsfit.png" alt="BeatsFit">
+    </div>
 
-            <h3 class="card-title">Awesome Project</h3>
+    <div class="card-date">
+      <div class="calendar-icon"></div>
+      <span>April 2025</span>
+    </div>
 
-            <p class="card-description">
-              This is a short project description that provides an overview of
-              what this card is about.
-            </p>
+    <h3 class="card-title">BEATSFIT</h3>
 
-            <p class="card-tech">React, Tailwind, Next.js</p>
+    <p class="card-description">
+      Takes yours and family's care - Health monitoring and family wellness tracking app.
+    </p>
 
-            <a class="github-link" href="https://github.com" target="_blank">
-              <div class="external-icon"></div>
-              View GitHub
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <div class="image-placeholder"></div>
-            </div>
+    <p class="card-tech">Jetpack Compose, Room DB, Firestore</p>
 
-            <div class="card-date">
-              <div class="calendar-icon"></div>
-              <span>July 23, 2025</span>
-            </div>
+    <a class="github-link" href="https://github.com/RiteshBKadam/BeatsFit" target="_blank">
+      <div class="external-icon"></div>
+      View GitHub
+    </a>
+  </div>
+</div>
 
-            <h3 class="card-title">Awesome Project</h3>
+<div class="card">
+  <div class="card-content">
+    <div class="card-image">
+      <img src="/resources/ebuddy.jpeg" alt="eBuddy">
+    </div>
 
-            <p class="card-description">
-              This is a short project description that provides an overview of
-              what this card is about.
-            </p>
+    <div class="card-date">
+      <div class="calendar-icon"></div>
+      <span>March 2024</span>
+    </div>
 
-            <p class="card-tech">React, Tailwind, Next.js</p>
+    <h3 class="card-title">eBUDDY</h3>
 
-            <a class="github-link" href="https://github.com" target="_blank">
-              <div class="external-icon"></div>
-              View GitHub
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <div class="image-placeholder"></div>
-            </div>
+    <p class="card-description">
+      Manages all your expenses - Comprehensive expense tracking and budget management.
+    </p>
 
-            <div class="card-date">
-              <div class="calendar-icon"></div>
-              <span>July 23, 2025</span>
-            </div>
+    <p class="card-tech">Java, XML, Firebase</p>
 
-            <h3 class="card-title">Awesome Project</h3>
+    <a class="github-link" href="https://github.com/RiteshBKadam/eBuddy" target="_blank">
+      <div class="external-icon"></div>
+      View GitHub
+    </a>
+  </div>
+</div>
 
-            <p class="card-description">
-              This is a short project description that provides an overview of
-              what this card is about.
-            </p>
+<div class="card">
+  <div class="card-content">
+    <div class="card-image">
+      <img src="/resources/quickly.webp" alt="Quickly">
+    </div>
 
-            <p class="card-tech">React, Tailwind, Next.js</p>
+    <div class="card-date">
+      <div class="calendar-icon"></div>
+      <span>July 2023</span>
+    </div>
 
-            <a class="github-link" href="https://github.com" target="_blank">
-              <div id="github" style="width: 10px; height: 10px"></div>
-              View GitHub
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-image">
-              <div class="image-placeholder"></div>
-            </div>
+    <h3 class="card-title">QUICKLY</h3>
 
-            <div class="card-date">
-              <div class="calendar-icon"></div>
-              <span>July 23, 2025</span>
-            </div>
+    <p class="card-description">
+      Share '.APK' of any app - Fast and easy APK sharing application for Android.
+    </p>
 
-            <h3 class="card-title">Awesome Project</h3>
+    <p class="card-tech">Kotlin, Package Manager, Intents</p>
 
-            <p class="card-description">
-              This is a short project description that provides an overview of
-              what this card is about.
-            </p>
+    <a class="github-link" href="https://github.com/RiteshBKadam/Quickly" target="_blank">
+      <div class="external-icon"></div>
+      View GitHub
+    </a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+    <div class="card-image">
+      <img src="/resources/mrb.png" alt="Make Roads Better">
+    </div>
 
-            <p class="card-tech">React, Tailwind, Next.js</p>
+    <div class="card-date">
+      <div class="calendar-icon"></div>
+      <span>June-July 2025</span>
+    </div>
 
-            <a class="github-link" href="https://github.com" target="_blank">
-              <div class="external-icon"></div>
-              View GitHub
-            </a>
-          </div>
-        </div>
+    <h3 class="card-title">MAKE ROADS BETTER</h3>
 
-        <!-- Example: Add your projects here as new cards -->
-        <!-- <div class="project-card">
-          <img
-            class="card-img-top"
-            src="resources/project1.png"
-            alt="Project 1"
-          />
-          <div class="projectInfo">
-            <span id="projectTitle">Project Title</span>
-            <span id="projectDate">2024</span>
-            <p class="projectDescription">
-              Brief description of the project showcasing its purpose, tech
-              stack, or innovative elements.
-            </p>
-            <div class="techStack">Kotlin, Python, React</div>
-            <a id="viewGithub" href="#" target="_blank">View on GitHub</a>
-          </div>
-        </div> -->
-        <!-- Duplicate project-card divs for more projects -->
-      </div>
-    </section>
+    <p class="card-description">
+      Report road issues instantly to improve public safety and infrastructure.
+    </p>
+
+    <p class="card-tech">Jetpack Compose, OSMdroid, Kotlin</p>
+
+    <a class="github-link" href="https://github.com/RiteshBKadam/MakeRoadsBetter/tree/master/Android/MakeRoadsBetter" target="_blank">
+      <div class="external-icon"></div>
+      View GitHub
+    </a>
+  </div>
+</div>
+  </div>
+</section>
+
+            <hr id="contact" />
 
     <!-- Contact Section -->
-    <section id="contact" class="contactMe-container scroll-fade">
+    <section id="contact" class="contactMe-container scroll-fade" style="  margin: 100px auto 190px auto;">
       <div class="contactMe-title">
         <h3>Contact Me</h3>
         <p>Let's create something innovative together!</p>
