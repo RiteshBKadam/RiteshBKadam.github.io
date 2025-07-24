@@ -2,7 +2,7 @@
 var typed = new Typed(".auto-type", {
   strings: ["Learning, Innovating and Developing!"],
   typeSpeed: 90,
-  startDelay: 450,
+  startDelay: 250,
   backSpeed: 34,
   loop: false
 });
@@ -19,11 +19,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Custom animated cursor
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', mouse => {
-  cursor.style.top = (mouse.pageY - 15) + "px";
-  cursor.style.left = (mouse.pageX - 15) + "px";
-});
+
 document.querySelectorAll('a, button, .navItems, .tech-pill, .project-card').forEach(element => {
   element.addEventListener('mouseenter', () => {
     cursor.style.transform = 'scale(1.45)';

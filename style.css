@@ -57,7 +57,6 @@ body {
   min-height: 78vh;
   display: flex;  
   align-items: center;
-  justify-content: space-evenly;
   margin-top: 110px;
   margin-bottom: 100px;
 }
@@ -67,7 +66,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: 2px;
   animation: animateGradient 6s infinite linear alternate;
 }
@@ -82,7 +81,11 @@ body {
 }
 
 .icons {
-  margin-top: 18px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  justify-content: center;
+  padding-right:0px;
 }
 
 .center {
@@ -143,7 +146,10 @@ body {
 
 .hr-spacing {
   padding: 0 10px;
-  margin: 0px;
+  margin: 0px 100px 0px 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .avatarOuter {
